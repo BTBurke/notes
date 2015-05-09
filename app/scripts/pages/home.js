@@ -41,6 +41,9 @@ class Home extends React.Component {
     return (
       <div>
       <Topnav />
+      <div>
+        This is a test.
+      </div>
       </div>
     );
   }
