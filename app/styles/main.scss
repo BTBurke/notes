@@ -6,6 +6,40 @@ $bootstrap-sass-asset-helper: false !default;
 @import "bootstrap-sass-official/assets/stylesheets/bootstrap";
 
 // Component level styles
+.group-header {
+  font-size: 18px;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  font-weight: bold;
+}
 
+.item-key {
+  font-size: 15px;
+  font-family: monospace;
+  background: #4e5d6c;
+}
+
+.cmd-info {
+  background: #242b33;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.cmd-input {
+  height: 60px;
+  margin-top: 15px;
+}
+
+.false-cmdinput {
+  margin-top: 15px;
+  height: 60px;
+}
+
+.false-cmdinfo {
+  height: 50px;
+  background: #242b33;
+}
 
 // Page level styles

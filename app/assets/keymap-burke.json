@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "owner": "Bryan Burke",
+    "email": "BurkeBT@state.gov"
+  },
+  "actions": {
+    "undo": "ctrl z",
+    "clear": "ctrl x",
+    "copy": "ctrl c",
+    "focus": "i",
+    "unfocus": "esc"
+  },
+  "group": [
+    {
+      "key": "a",
+      "desc": "Applicant Information",
+      "items": [
+        {
+          "key": "a c",
+          "string": "Couple"
+        },
+        {
+          "key": "a r",
+          "string": "Retired"
+        },
+        {
+          "key": "a f",
+          "desc": "Family of <#>",
+          "template": {
+            "data": [
+              "number"
+            ],
+            "prompt": [
+              "Enter number of family members"
+            ],
+            "template": "Family of {{number}}"
+          }
+        },
+        {
+          "key": "a w",
+          "desc": "Group of <#> coworkers",
+          "template": {
+            "data": [
+              "number"
+            ],
+            "prompt": [
+              "Enter number of coworkers"
+            ],
+            "template": "Group of {{number}} coworkers"
+          }
+        }
+      ]
+    },
+    {
+      "key": "t",
+      "desc": "Travel History",
+      "items": [
+        {
+          "key": "t e",
+          "string": "EU PT"
+        },
+        {
+          "key": "t s",
+          "string": "SE Asia PT"
+        },
+        {
+          "key": "t a",
+          "string": "AUS PT"
+        },
+        {
+          "key": "t u",
+          "string": "US PT"
+        },
+        {
+          "key": "t r",
+          "string": "Regional PT"
+        },
+        {
+          "key": "t b",
+          "string": "Prior business travel"
+        },
+        {
+          "key": "t n",
+          "string": "No PT"
+        }
+      ]
+    },
+    {
+      "key": "e",
+      "desc": "Employment",
+      "items": [
+        {
+          "key": "e s",
+          "string": "Good job and salary"
+        },
+        {
+          "key": "e g",
+          "string": "Govt job"
+        },
+        {
+          "key": "e f",
+          "desc": "Works for <_>",
+          "template": {
+            "data": [
+              "employer"
+            ],
+            "prompt": [
+              "Enter employer"
+            ],
+            "template": "Works for {{employer}}"
+          }
+        },
+        {
+          "key": "e a",
+          "desc": "Works as a <_>",
+          "template": {
+            "data": [
+              "worksas"
+            ],
+            "prompt": [
+              "Enter employment type"
+            ],
+            "template": "Works as {{worksas}}"
+          }
+        }
+      ]
+    },
+    {
+      "key": "d",
+      "desc": "Derogatory Information",
+      "items": [
+        {
+          "key": "d r",
+          "string": "PR noted"
+        },
+        {
+          "key": "d a",
+          "string": "LPR traveled on tourist visa and claimed immigration benefits"
+        },
+        {
+          "key": "d no",
+          "string": "Does not overcome 214b"
+        },
+        {
+          "key": "d t",
+          "string": "Too many doubts"
+        },
+        {
+          "key": "d f",
+          "desc": "FPU pre-screen indicates <_>",
+          "template": {
+            "data": [
+              "fpuinfo"
+            ],
+            "prompt": [
+              "FPU pre-screen indicates"
+            ],
+            "template": "FPU pre-screen indicates {{fpuinfo}}"
+          }
+        },
+        {
+          "key": "d p",
+          "string": "Travel history indicative of fraud"
+        }
+      ]
+    },
+    {
+      "key": "s",
+      "desc": "SAO Information",
+      "items": [
+        {
+          "key": "s n",
+          "string": "No TAL concern"
+        },
+        {
+          "key": "s r",
+          "string": "SAO required"
+        },
+        {
+          "key": "s d",
+          "desc": "<degree> in <major>",
+          "template": {
+            "data": [
+              "degree",
+              "major"
+            ],
+            "prompt": [
+              "Enter highest degree",
+              "Enter major"
+            ],
+            "template": "{{degree}} in {{major}}"
+          }
+        }
+      ]
+    },
+    {
+      "key": "r",
+      "desc": "Region information",
+      "items": [
+        {
+          "key": "r f",
+          "string": "High fraud region"
+        },
+        {
+          "key": "r h",
+          "string": "Moved residency"
+        },
+        {
+          "key": "r w",
+          "string": "From wealthy area"
+        },
+        {
+          "key": "r g",
+          "string": "From good area"
+        },
+        {
+          "key": "r c",
+          "desc": "Claims <city> but <doubts>",
+          "template": {
+            "data": [
+              "city",
+              "doubts"
+            ],
+            "prompt": [
+              "Enter city",
+              "Enter doubts"
+            ],
+            "template": "Claims {{city}} but {{doubts}}"
+          }
+        }
+      ]
+    }
+  ]
+}
