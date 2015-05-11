@@ -69,7 +69,7 @@ class Home extends React.Component {
 
   // On page change, remove bindings so we don't throw lots of errors
   componentWillUnmount() {
-    bindings.unbindAll();
+    this.bindings.unbindAll();
     Mousetrap.reset();
   }
 

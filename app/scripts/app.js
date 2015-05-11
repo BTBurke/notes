@@ -1,6 +1,7 @@
 // Pages
 var React = require('react'),
-    Home = require('./pages/home');
+    Home = require('./pages/home'),
+    Edit = require('./pages/edit');
 
 // React-router
 var Router = require('react-router'),
@@ -24,6 +25,7 @@ var External = React.createClass({
 var routes = (
   <Route name="external" path="/" handler={External}>
     <DefaultRoute handler={Home}/>
+    <Route name="edit" handler={Edit} />
   </Route>
 );
 
