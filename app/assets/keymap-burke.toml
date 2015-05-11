@@ -1,0 +1,179 @@
+[meta]
+owner = "Bryan Burke"
+email = "BurkeBT@state.gov"
+name = "Bryan Default Short"
+
+[actions]
+undo = "ctrl z"
+clear = "ctrl x"
+copy = "ctrl c"
+focus = "i"
+unfocus = "esc"
+
+[[group]]
+key = "a"
+desc = "Applicant Information"
+
+  [[group.items]]
+  key = "a c"
+  string = "Couple"
+
+  [[group.items]]
+  key = "a r"
+  string = "Retired"
+
+  [[group.items]]
+  key = "a f"
+  desc = "Family of <#>"
+    [group.items.template]
+    data = ["number"]
+    prompt = ["Enter number of family members"]
+    template = "Family of {{number}}"
+
+  [[group.items]]
+  key = "a w"
+  desc = "Group of <#> coworkers"
+    [group.items.template]
+    data = ["number"]
+    prompt = ["Enter number of coworkers"]
+    template = "Group of {{number}} coworkers"
+
+[[group]]
+key = "t"
+desc = "Travel History"
+
+  [[group.items]]
+  key = "t e"
+  string = "EU PT"
+
+  [[group.items]]
+  key = "t s"
+  string = "SE Asia PT"
+
+  [[group.items]]
+  key = "t a"
+  string = "AUS PT"
+
+  [[group.items]]
+  key = "t u"
+  string = "US PT"
+
+  [[group.items]]
+  key = "t r"
+  string = "Regional PT"
+
+  [[group.items]]
+  key = "t b"
+  string = "Prior business travel"
+
+  [[group.items]]
+  key = "t n"
+  string = "No PT"
+
+[[group]]
+key = "e"
+desc = "Employment"
+
+  [[group.items]]
+  key = "e s"
+  string = "Good job and salary"
+
+  [[group.items]]
+  key = "e g"
+  string = "Govt job"
+
+  [[group.items]]
+  key = "e f"
+  desc = "Works for <_>"
+    [group.items.template]
+    data = ["employer"]
+    prompt = ["Enter employer"]
+    template = "Works for {{employer}}"
+
+  [[group.items]]
+  key = "e a"
+  desc = "Works as a <_>"
+    [group.items.template]
+    data = ["worksas"]
+    prompt = ["Enter employment type"]
+    template = "Works as {{worksas}}"
+
+[[group]]
+key = "d"
+desc = "Derogatory Information"
+
+  [[group.items]]
+  key = "d r"
+  string = "PR noted"
+
+  [[group.items]]
+  key = "d a"
+  string = "LPR traveled on tourist visa and claimed immigration benefits"
+
+  [[group.items]]
+  key = "d no"
+  string = "Does not overcome 214b"
+
+  [[group.items]]
+  key = "d t"
+  string = "Too many doubts"
+
+  [[group.items]]
+  key = "d f"
+  desc = "FPU pre-screen indicates <_>"
+    [group.items.template]
+    data = ["fpuinfo"]
+    prompt = ["FPU pre-screen indicates"]
+    template = "FPU pre-screen indicates {{fpuinfo}}"
+
+  [[group.items]]
+  key = "d p"
+  string = "Travel history indicative of fraud"
+
+[[group]]
+key = "s"
+desc = "SAO Information"
+
+  [[group.items]]
+  key = "s n"
+  string = "No TAL concern"
+
+  [[group.items]]
+  key = "s r"
+  string = "SAO required"
+
+  [[group.items]]
+  key = "s d"
+  desc = "<degree> in <major>"
+    [group.items.template]
+    data = ["degree", "major"]
+    prompt = ["Enter highest degree", "Enter major"]
+    template = "{{degree}} in {{major}}"
+
+[[group]]
+key = "r"
+desc = "Region information"
+
+  [[group.items]]
+  key = "r f"
+  string = "High fraud region"
+
+  [[group.items]]
+  key = "r h"
+  string = "Moved residency"
+
+  [[group.items]]
+  key = "r w"
+  string = "From wealthy area"
+
+  [[group.items]]
+  key = "r g"
+  string = "From good area"
+
+  [[group.items]]
+  key = "r c"
+  desc = "Claims <city> but <doubts>"
+    [group.items.template]
+    data = ["city", "doubts"]
+    prompt = ["Enter city", "Enter doubts"]
+    template = "Claims {{city}} but {{doubts}}"

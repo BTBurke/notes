@@ -1,7 +1,8 @@
 {
   "meta": {
     "owner": "Bryan Burke",
-    "email": "BurkeBT@state.gov"
+    "email": "BurkeBT@state.gov",
+    "name": "Bryan Default Short"
   },
   "actions": {
     "undo": "ctrl z",
