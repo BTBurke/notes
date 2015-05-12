@@ -53,6 +53,33 @@
       ]
     },
     {
+      "key": "p",
+      "desc": "Purpose of Travel",
+      "items": [
+        {
+          "key": "p t",
+          "string": "For tourism"
+        },
+        {
+          "key": "p m",
+          "string": "To attend business meeting"
+        },
+        {
+          "key": "p c",
+          "desc": "To attend <_> conference ",
+          "template": {
+            "data": [
+              "conf"
+            ],
+            "prompt": [
+              "Enter conference"
+            ],
+            "template": "To attend {{conf}} conference"
+          }
+        }
+      ]
+    },
+    {
       "key": "t",
       "desc": "Travel History",
       "items": [

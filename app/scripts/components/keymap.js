@@ -33,7 +33,7 @@ class KeyMap extends React.Component {
          });
 
          return (
-          <B.Col lg={4} md={4}>
+          <B.Col lg={6} md={6}>
               <div className="group-header">{group.desc}</div>
               <B.Table condensed>
                 <tbody>
@@ -46,11 +46,11 @@ class KeyMap extends React.Component {
 
       var groupsByRow = [];
 
-      for (var i=0; i<allGroups.length; i=i+3) {
+      for (var i=0; i<allGroups.length; i=i+2) {
 
         groupsByRow.push(
           <B.Row>
-          {allGroups.slice(i,i+3)}
+          {allGroups.slice(i,i+2)}
           </B.Row>
        );
       }
